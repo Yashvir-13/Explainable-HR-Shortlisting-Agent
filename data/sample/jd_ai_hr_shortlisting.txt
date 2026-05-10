@@ -1,0 +1,25 @@
+Role: Senior AI Engineer - HR Shortlisting Automation
+
+We are hiring a senior AI engineer to build an explainable candidate shortlisting agent for our HR operations team.
+The engineer will work with recruiters, data analysts, and compliance stakeholders to parse job descriptions,
+ingest resumes and LinkedIn exports, score candidates using a transparent rubric, and generate audit-ready reports.
+
+Required experience:
+- 5+ years building production Python applications or ML systems.
+- Experience with LLM applications, LangChain or LangGraph, prompt engineering, and structured output validation.
+- Strong Python, SQL, pandas, API design, and data analysis skills.
+- Experience with RAG, vector database workflows, or semantic search.
+- Familiarity with HR analytics, recruiting workflows, or talent acquisition data is strongly preferred.
+- Ability to deploy Streamlit or FastAPI prototypes and explain technical tradeoffs to non-technical stakeholders.
+
+Education and certifications:
+- Bachelor's degree in Computer Science, Data Science, Engineering, or equivalent practical experience.
+- Cloud or ML certifications are a plus.
+
+Responsibilities:
+- Build a JD parser and resume/profile parser.
+- Compare candidates against requirements using LLM reasoning and deterministic checks.
+- Produce a ranked shortlist with dimension-level justifications.
+- Implement human-in-the-loop overrides and an audit trail.
+- Document security mitigations for prompt injection, PII, API keys, hallucination, and endpoint access.
+

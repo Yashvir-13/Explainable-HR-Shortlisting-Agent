@@ -1,0 +1,31 @@
+{
+  "name": "Omar Khan",
+  "headline": "Junior Python Developer | Open to Opportunities",
+  "location": "Delhi, India",
+  "summary": "Recent graduate with a passion for backend development and scripting. Completed a 6-month internship building REST APIs in Flask. Eager to learn and grow in AI/ML roles. Basic familiarity with pandas and SQL from academic projects.",
+  "experience": [
+    {
+      "title": "Python Developer Intern",
+      "company": "CodeCraft Solutions",
+      "duration": "Jan 2025 – Jun 2025 (6 months)",
+      "location": "Delhi, India",
+      "description": "Built REST APIs using Flask for an internal employee management tool. Wrote unit tests with pytest. Assisted in database schema design with PostgreSQL. Participated in code reviews and agile sprints."
+    }
+  ],
+  "skills": ["Python", "Flask", "SQL", "PostgreSQL", "Git", "REST APIs", "pytest"],
+  "education": [
+    {
+      "degree": "B.Tech in Information Technology",
+      "institution": "Guru Gobind Singh Indraprastha University, Delhi",
+      "year": "2025"
+    }
+  ],
+  "certifications": [],
+  "projects": [
+    "Employee Directory API: Built a CRUD REST API with Flask and PostgreSQL for an internal employee lookup tool."
+  ],
+  "achievements": [
+    "Secured 2nd place in university-level coding hackathon (2024)"
+  ],
+  "languages": ["English (Professional)", "Hindi (Native)", "Urdu (Conversational)"]
+}

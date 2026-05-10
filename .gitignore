@@ -1,0 +1,14 @@
+.env
+__pycache__/
+*.pyc
+.pytest_cache/
+.streamlit/secrets.toml
+outputs/*
+!outputs/.gitkeep
+!outputs/shortlist_report.*
+!outputs/explainable_hr_shortlisting_agent_deck.pptx
+
+override_log.jsonl
+.langchain.db
+venv/
+env/

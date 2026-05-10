@@ -1,0 +1,47 @@
+{
+  "name": "Neha Kapoor",
+  "headline": "Data Scientist | Healthcare Analytics & Predictive Modelling",
+  "location": "Mumbai, India",
+  "summary": "Data scientist with 5 years of experience in healthcare analytics and predictive modelling. Skilled in Python, statistical analysis, and machine learning. Currently exploring LLM applications for clinical NLP and structured data extraction from medical records.",
+  "experience": [
+    {
+      "title": "Senior Data Scientist",
+      "company": "MedInsights Analytics",
+      "duration": "Aug 2021 – Present (4.5 years)",
+      "location": "Mumbai, India",
+      "description": "Lead predictive modelling for patient readmission risk using XGBoost and logistic regression. Built ETL pipelines processing 2M+ patient records monthly using pandas and Apache Airflow. Developed clinical NLP prototypes using spaCy and Hugging Face transformers for extracting diagnoses from unstructured medical notes."
+    },
+    {
+      "title": "Junior Data Analyst",
+      "company": "Apollo Hospitals Group",
+      "duration": "Jun 2019 – Jul 2021 (2 years)",
+      "location": "Chennai, India",
+      "description": "Created SQL-based reporting dashboards for hospital operations. Performed A/B testing for patient engagement campaigns. Assisted in building a basic resume screening tool for hospital HR using keyword matching."
+    }
+  ],
+  "skills": ["Python", "SQL", "pandas", "NumPy", "scikit-learn", "XGBoost", "statistics", "data analysis", "ETL", "Apache Airflow", "spaCy", "machine learning"],
+  "education": [
+    {
+      "degree": "M.Sc. in Statistics",
+      "institution": "Indian Statistical Institute, Kolkata",
+      "year": "2019"
+    },
+    {
+      "degree": "B.Sc. in Mathematics",
+      "institution": "St. Xavier's College, Mumbai",
+      "year": "2017"
+    }
+  ],
+  "certifications": [
+    "Google Cloud Professional Data Engineer (2023)"
+  ],
+  "projects": [
+    "Patient Readmission Predictor: ML pipeline predicting 30-day readmission risk with 0.82 AUC using XGBoost and SHAP explainability.",
+    "Clinical NLP Prototype: Extracted ICD codes from physician notes using fine-tuned BioBERT, achieving 87% F1 score."
+  ],
+  "achievements": [
+    "Reduced patient readmission prediction errors by 18%",
+    "Presented research on explainable ML at MedTech India Conference 2024"
+  ],
+  "languages": ["English (Professional)", "Hindi (Native)"]
+}

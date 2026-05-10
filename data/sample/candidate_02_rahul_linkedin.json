@@ -1,0 +1,40 @@
+{
+  "name": "Rahul Mehta",
+  "headline": "ML Engineer | NLP & Conversational AI",
+  "location": "Pune, India",
+  "summary": "ML engineer with 4 years of hands-on experience in NLP, conversational AI, and LLM application development. Comfortable with Python, LangChain, and cloud deployments. Looking to transition into applied AI roles that combine engineering depth with domain impact.",
+  "experience": [
+    {
+      "title": "Machine Learning Engineer",
+      "company": "ChatFlow Technologies",
+      "duration": "Mar 2022 – Present (4 years)",
+      "location": "Pune, India",
+      "description": "Developed and maintained a customer support chatbot using LangChain and GPT-4o, handling 8K+ conversations/day. Built RAG pipelines with Pinecone for knowledge base retrieval. Implemented intent classification models with scikit-learn achieving 91% accuracy. Deployed services on AWS ECS with Docker."
+    },
+    {
+      "title": "Data Analyst",
+      "company": "InfoEdge India",
+      "duration": "Jul 2020 – Feb 2022 (1.5 years)",
+      "location": "Noida, India",
+      "description": "Analysed job posting and applicant data using SQL and pandas. Built automated reporting dashboards for recruitment metrics. Exposed to HR analytics workflows and ATS integrations."
+    }
+  ],
+  "skills": ["Python", "SQL", "pandas", "LangChain", "RAG", "NLP", "scikit-learn", "Docker", "AWS", "Pinecone", "prompt engineering", "data analysis"],
+  "education": [
+    {
+      "degree": "M.Sc. in Data Science",
+      "institution": "Pune University",
+      "year": "2020"
+    }
+  ],
+  "certifications": [],
+  "projects": [
+    "Customer Support Bot: End-to-end chatbot with LangChain, retrieval-augmented generation, and escalation logic. Reduced ticket resolution time by 35%.",
+    "Job Market Trends Dashboard: Interactive Plotly dashboard analysing 50K+ job postings scraped from Naukri.com."
+  ],
+  "achievements": [
+    "Improved chatbot first-response accuracy from 74% to 91%",
+    "Recognised as 'Rising Star' at ChatFlow Technologies annual review 2024"
+  ],
+  "languages": ["English (Professional)", "Hindi (Native)", "Marathi (Native)"]
+}

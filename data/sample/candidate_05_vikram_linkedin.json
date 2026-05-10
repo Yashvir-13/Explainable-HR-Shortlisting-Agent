@@ -1,0 +1,41 @@
+{
+  "name": "Vikram Sethi",
+  "headline": "Frontend Developer | React & TypeScript",
+  "location": "Gurugram, India",
+  "summary": "Frontend developer with 3 years of experience building modern web applications using React, TypeScript, and Next.js. Focused on responsive UI/UX, accessibility, and component library development. Limited exposure to backend or ML workflows.",
+  "experience": [
+    {
+      "title": "Frontend Developer",
+      "company": "PixelPerfect Studios",
+      "duration": "Apr 2023 – Present (3 years)",
+      "location": "Gurugram, India",
+      "description": "Built and maintained a SaaS dashboard using React, TypeScript, and TailwindCSS. Implemented responsive layouts, chart components with Recharts, and form validation with React Hook Form. Collaborated with backend team consuming REST APIs. Improved Lighthouse performance score from 62 to 94."
+    },
+    {
+      "title": "Web Development Intern",
+      "company": "StartupHub Incubator",
+      "duration": "Jan 2023 – Mar 2023 (3 months)",
+      "location": "Bangalore, India",
+      "description": "Built landing pages and marketing sites using HTML, CSS, and JavaScript. Gained exposure to Git workflows and agile methodology."
+    }
+  ],
+  "skills": ["JavaScript", "TypeScript", "React", "Next.js", "HTML", "CSS", "TailwindCSS", "Git", "REST APIs", "Figma"],
+  "education": [
+    {
+      "degree": "BCA (Bachelor of Computer Applications)",
+      "institution": "Amity University, Noida",
+      "year": "2022"
+    }
+  ],
+  "certifications": [
+    "Meta Frontend Developer Professional Certificate (2023)"
+  ],
+  "projects": [
+    "SaaS Analytics Dashboard: Built a multi-tenant dashboard with React, TypeScript, and Recharts for data visualisation. Implemented role-based access control on the frontend.",
+    "Portfolio Website: Personal portfolio built with Next.js and deployed on Vercel."
+  ],
+  "achievements": [
+    "Improved Lighthouse performance score from 62 to 94 for production SaaS app"
+  ],
+  "languages": ["English (Professional)", "Hindi (Native)"]
+}

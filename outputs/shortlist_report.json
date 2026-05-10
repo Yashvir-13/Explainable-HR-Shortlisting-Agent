@@ -1,0 +1,471 @@
+{
+  "requirements": {
+    "role_title": "Senior AI Engineer",
+    "domain": "HR Shortlisting Automation",
+    "seniority": "Senior",
+    "must_have_skills": [
+      "Python",
+      "ML systems",
+      "LLM applications",
+      "LangChain",
+      "LangGraph",
+      "Prompt engineering",
+      "Structured output validation",
+      "SQL",
+      "pandas",
+      "API design",
+      "Data analysis",
+      "RAG",
+      "Vector database workflows",
+      "Semantic search",
+      "Streamlit",
+      "FastAPI",
+      "Explaining technical tradeoffs to non-technical stakeholders"
+    ],
+    "nice_to_have_skills": [
+      "HR analytics",
+      "Recruiting workflows",
+      "Talent acquisition data"
+    ],
+    "min_years_experience": 5.0,
+    "education": [
+      "Bachelor's degree in Computer Science",
+      "Bachelor's degree in Data Science",
+      "Bachelor's degree in Engineering",
+      "Equivalent practical experience"
+    ],
+    "certifications": [
+      "Cloud certifications",
+      "ML certifications"
+    ],
+    "responsibilities": [
+      "Build a JD parser and resume/profile parser",
+      "Compare candidates against requirements using LLM reasoning and deterministic checks",
+      "Produce a ranked shortlist with dimension-level justifications",
+      "Implement human-in-the-loop overrides and an audit trail",
+      "Document security mitigations for prompt injection, PII, API keys, hallucination, and endpoint access"
+    ],
+    "red_flags": []
+  },
+  "ranked_candidates": [
+    {
+      "candidate_id": "candidate_01_isha_linkedin",
+      "name": "Isha Raman",
+      "recommendation": "hire",
+      "scores": [
+        {
+          "dimension": "Skills Match",
+          "weight": 0.3,
+          "score": 10.0,
+          "justification": "The candidate possesses all required must-have and nice-to-have skills, demonstrating a comprehensive technical and domain-specific fit.",
+          "evidence": [
+            "Python",
+            "SQL",
+            "pandas",
+            "LLM",
+            "LangChain",
+            "LangGraph",
+            "RAG",
+            "vector database",
+            "ChromaDB",
+            "FAISS",
+            "Streamlit",
+            "FastAPI",
+            "prompt engineering",
+            "HR analytics",
+            "data analysis",
+            "Pydantic for structured output validation",
+            "FastAPI microservices",
+            "semantic resume search",
+            "designing transparent, auditable AI workflows that bridge the gap between cutting-edge NLP research and real-world recruiter needs"
+          ],
+          "weighted_score": 3.0
+        },
+        {
+          "dimension": "Experience Relevance",
+          "weight": 0.25,
+          "score": 10.0,
+          "justification": "The candidate's 9.5 years of experience, current Senior AI Engineer role, and direct involvement in HR shortlisting automation projects perfectly align with the required seniority and domain.",
+          "evidence": [
+            "total_years_experience: 9.5",
+            "current_title: Senior AI Engineer",
+            "domains: [\"HR\", \"Recruiting\", \"AI\", \"Machine Learning\", \"NLP\", \"HR Analytics\"]",
+            "Explainable Shortlisting System",
+            "Recruiter Dashboard",
+            "Resume Parser Service",
+            "Architected the core LangGraph agent pipeline that parses job descriptions, ingests resumes from multiple formats... and scores candidates against a configurable rubric.",
+            "Led compliance review for PII-safe AI workflows, achieving SOC 2 readiness."
+          ],
+          "weighted_score": 2.5
+        },
+        {
+          "dimension": "Education & Certs",
+          "weight": 0.15,
+          "score": 10.0,
+          "justification": "The candidate holds a relevant B.Tech in Computer Science from a top institution and possesses two highly relevant certifications, including AWS ML Specialty.",
+          "evidence": [
+            "B.Tech in Computer Science and Engineering, Indian Institute of Technology, Madras (2016)",
+            "AWS Machine Learning Specialty (2023)",
+            "DeepLearning.AI LangChain for LLM Application Development (2024)"
+          ],
+          "weighted_score": 1.5
+        },
+        {
+          "dimension": "Project / Portfolio",
+          "weight": 0.2,
+          "score": 10.0,
+          "justification": "The candidate presents a strong portfolio of three highly relevant projects that directly address the core responsibilities of the role, demonstrating practical application of required skills.",
+          "evidence": [
+            "Explainable Shortlisting System",
+            "Recruiter Dashboard",
+            "Resume Parser Service"
+          ],
+          "weighted_score": 2.0
+        },
+        {
+          "dimension": "Communication Quality",
+          "weight": 0.1,
+          "score": 10.0,
+          "justification": "The candidate's profile text is exceptionally well-structured, clear, and impactful, effectively communicating their expertise and achievements with excellent grammar and conciseness.",
+          "evidence": [
+            "headline: Senior AI Engineer | LangGraph & HR Analytics",
+            "summary: Passionate AI engineer with 9 years of experience building production-grade ML systems and LLM-powered applications for the HR and recruiting domain. I specialise in designing transparent, auditable AI workflows...",
+            "Improved recruiter review throughput by 42% and reduced time-to-shortlist from 3 days to 4 hours."
+          ],
+          "weighted_score": 1.0
+        }
+      ],
+      "strengths": [
+        "Deep expertise in LLM applications, LangChain, and LangGraph.",
+        "Extensive experience in HR and recruiting domain-specific AI solutions.",
+        "Strong portfolio of highly relevant projects directly addressing job responsibilities.",
+        "Proven ability to build explainable, auditable, and production-grade ML systems.",
+        "Demonstrated commitment to PII safety and bias mitigation in AI.",
+        "Excellent communication skills."
+      ],
+      "gaps": [],
+      "risk_flags": [],
+      "overall_justification": "Isha Raman is an exceptional candidate who perfectly aligns with all requirements for the Senior AI Engineer role. Her extensive experience, specialized skills in LLM applications and HR analytics, and a strong portfolio of directly relevant projects demonstrate a superior fit. She exceeds seniority requirements, holds relevant education and certifications, and communicates her expertise clearly and effectively.",
+      "confidence": 1.0,
+      "weighted_total": 10.0,
+      "profile": {
+        "candidate_id": "candidate_01_isha_linkedin",
+        "name": "Isha Raman",
+        "current_title": "Senior AI Engineer",
+        "location": "Bengaluru, India",
+        "total_years_experience": 9.5,
+        "skills": [
+          "Python",
+          "SQL",
+          "pandas",
+          "NumPy",
+          "LLM",
+          "LangChain",
+          "LangGraph",
+          "RAG",
+          "vector database",
+          "ChromaDB",
+          "FAISS",
+          "Streamlit",
+          "FastAPI",
+          "Docker",
+          "AWS",
+          "prompt engineering",
+          "HR analytics",
+          "data analysis",
+          "scikit-learn",
+          "PyTorch"
+        ],
+        "domains": [
+          "HR",
+          "Recruiting",
+          "AI",
+          "Machine Learning",
+          "NLP",
+          "HR Analytics"
+        ],
+        "education": [
+          "B.Tech in Computer Science and Engineering, Indian Institute of Technology, Madras (2016)"
+        ],
+        "certifications": [
+          "AWS Machine Learning Specialty (2023)",
+          "DeepLearning.AI LangChain for LLM Application Development (2024)"
+        ],
+        "projects": [
+          "Explainable Shortlisting System: Built an end-to-end candidate evaluation agent with rubric scoring, dimension-level justifications, and audit logs. Used LangGraph for orchestration and Pydantic for structured output validation.",
+          "Recruiter Dashboard: Created a Streamlit-based interactive dashboard for side-by-side candidate comparison with drill-down into individual score dimensions and evidence trails.",
+          "Resume Parser Service: Deployed a FastAPI microservice that extracts structured candidate profiles from PDF, DOCX, and LinkedIn JSON formats using pdfplumber, python-docx, and LLM-based extraction."
+        ],
+        "achievements": [
+          "Reduced manual screening time by 42% across a 12-person recruiting team",
+          "Led compliance review for PII-safe AI workflows, achieving SOC 2 readiness",
+          "Published internal white paper on bias mitigation in LLM-based candidate scoring",
+          "Mentored 3 junior engineers on prompt engineering and structured output patterns"
+        ],
+        "raw_text_excerpt": "name: Isha Raman\nheadline: Senior AI Engineer | LangGraph & HR Analytics\nlocation: Bengaluru, India\nsummary: Passionate AI engineer with 9 years of experience building production-grade ML systems and LLM-powered applications for the HR and recruiting domain. I specialise in designing transparent, auditable AI workflows that bridge the gap between cutting-edge NLP research and real-world recruiter needs. Strong believer in explainable AI for high-stakes decisions like hiring.\nexperience title: Senior AI Engineer\nexperience company: TalentOps Labs\nexperience duration: Jun 2020 \u2013 Present (6 years)\nexperience location: Bengaluru, India\nexperience description: Lead a team of 4 engineers building an AI-powered candidate shortlisting platform. Architected the core LangGraph agent pipeline that parses job descriptions, ingests resumes from multiple formats (PDF, DOCX, LinkedIn JSON), and scores candidates against a configurable rubric. Deployed production Streamlit dashboards and FastAPI microservices. Improved recruiter review throughput by 42% and reduced time-to-shortlist from 3 days to 4 hours.\nexperience title: Machine Learning Engineer\nexperience company: PeopleData AI\nexperience duration: Jan 2017 \u2013 May 2020 (3.5 years)\nexperience location: Hyderabad, India\nexperience description: Built RAG workflows using ChromaDB and FAISS for semantic resume search across 200K+ candidate profiles. Implemented SQL analytics pipelines with pandas for HR reporting dashboards. Developed prompt engineering evaluation frameworks and structured JSON output validation for LLM-based classification tasks. Managed data pipelines processing 15K resumes/month.\nskills: Python\nskills: SQL\nskills: pandas\nskills: NumPy\nskills: LLM\nskills: LangChain\nskills: LangGraph\nskills: RAG\nskills: vector database\nskills: ChromaDB\nskills: FAISS\nskills: Streamlit\nskills: FastAPI\nskills: Docker\nskills: AWS\nskills: prompt engineering\nskills: HR analytics\nskills: data analysis\nskills: scikit-learn\nskills: PyTorch\neducation degree: B.Tech in Computer Science and Engineering\neducation institution: Indian Institute of Technology, Madras\neducation year: 2016\ncertifications: AWS Machine Learning Specialty (2023)\ncertifications: DeepLearning.AI LangChain for LLM Application Development (2024)\nprojects: Explainable Shortlisting System: Built an end-to-end candidate evaluation agent with rubric scoring, dimension-level justifications, and audit logs. Used LangGraph for orchestration and Pydantic for structured output validation.\nprojects: Recruiter Dashboard: Created a Streamlit-based interactive dashboard for side-by-side candidate comparison with drill-down into individual score dimensions and evidence trails.\nprojects: Resume Parser Service: Deployed a FastAPI microservice that extracts structured candidate profiles from PDF, DOCX, and LinkedIn JSON formats using pdfplumber, python-docx, and LLM-based extraction.\nachievements: Reduced manual screening time by 42% across a 12-person recruiting team\nachievements: Led compliance review for PII-safe AI workflows, achieving SOC 2 readiness\nachievements: Published internal white paper on bias mitigation in LLM-based candidate scoring\nachievements: Mentored 3 junior engineers on prompt engineering and structured output patterns\nlanguages: English (Professional)\nlanguages: Hindi (Native)\nlanguages: Tamil (Conversational)",
+        "source_file": "/tmp/tmpegjfbouf/candidate_01_isha_linkedin.json"
+      }
+    },
+    {
+      "candidate_id": "candidate_02_rahul_linkedin",
+      "name": "Rahul Mehta",
+      "recommendation": "hire",
+      "scores": [
+        {
+          "dimension": "Skills Match",
+          "weight": 0.3,
+          "score": 7.0,
+          "justification": "Rahul demonstrates strong proficiency in core ML/LLM skills like Python, LangChain, RAG, prompt engineering, and data analysis, but lacks explicit experience with LangGraph, Streamlit, FastAPI, and structured output validation.",
+          "evidence": [
+            "Python",
+            "SQL",
+            "pandas",
+            "LangChain",
+            "RAG",
+            "NLP",
+            "scikit-learn",
+            "Docker",
+            "AWS",
+            "Pinecone",
+            "prompt engineering",
+            "data analysis",
+            "HR Analytics"
+          ],
+          "weighted_score": 2.1
+        },
+        {
+          "dimension": "Experience Relevance",
+          "weight": 0.25,
+          "score": 9.0,
+          "justification": "With 5.5 years of experience as an ML Engineer and direct exposure to HR analytics and job data processing, Rahul's background is highly relevant to the domain and seniority requirements.",
+          "evidence": [
+            "total_years_experience: 5.5",
+            "current_title: ML Engineer",
+            "domains: HR Analytics",
+            "experience description: Analysed job posting and applicant data using SQL and pandas. Built automated reporting dashboards for recruitment metrics. Exposed to HR analytics workflows and ATS integrations.",
+            "experience description: Developed and maintained a customer support chatbot using LangChain and GPT-4o, handling 8K+ conversations/day. Built RAG pipelines with Pinecone for knowledge base retrieval."
+          ],
+          "weighted_score": 2.25
+        },
+        {
+          "dimension": "Education & Certs",
+          "weight": 0.15,
+          "score": 6.0,
+          "justification": "Rahul holds an M.Sc. in Data Science, exceeding the minimum education requirement, but does not list any relevant cloud or ML certifications.",
+          "evidence": [
+            "M.Sc. in Data Science, Pune University (2020)"
+          ],
+          "weighted_score": 0.9
+        },
+        {
+          "dimension": "Project / Portfolio",
+          "weight": 0.2,
+          "score": 9.0,
+          "justification": "His 'Customer Support Bot' project demonstrates strong LLM application development with measurable impact, and the 'Job Market Trends Dashboard' is directly relevant to the HR domain.",
+          "evidence": [
+            "Customer Support Bot: End-to-end chatbot with LangChain, retrieval-augmented generation, and escalation logic. Reduced ticket resolution time by 35%.",
+            "Job Market Trends Dashboard: Interactive Plotly dashboard analysing 50K+ job postings scraped from Naukri.com."
+          ],
+          "weighted_score": 1.8
+        },
+        {
+          "dimension": "Communication Quality",
+          "weight": 0.1,
+          "score": 9.0,
+          "justification": "The provided profile text is clear, well-structured, and effectively highlights key skills, experience, and achievements.",
+          "evidence": [
+            "raw_text_excerpt"
+          ],
+          "weighted_score": 0.9
+        }
+      ],
+      "strengths": [
+        "Strong experience in LLM application development, RAG, and prompt engineering.",
+        "Direct experience in HR analytics and processing job market data, providing excellent domain fit.",
+        "Demonstrated ability to build end-to-end AI solutions with measurable impact through relevant projects.",
+        "Solid technical skills in Python, LangChain, SQL, pandas, AWS, and Docker.",
+        "Relevant academic background with an M.Sc. in Data Science."
+      ],
+      "gaps": [
+        "Lack of explicit experience with specific frameworks like LangGraph, Streamlit, and FastAPI.",
+        "No direct evidence of experience with structured output validation or advanced API design.",
+        "No explicit mention of experience in explaining technical tradeoffs to non-technical stakeholders.",
+        "Absence of cloud or ML certifications."
+      ],
+      "risk_flags": [],
+      "overall_justification": "Rahul demonstrates strong technical proficiency in LLM application development, RAG, and prompt engineering, directly aligning with core responsibilities. His experience in HR analytics and processing job market data provides an excellent domain fit. While some specific framework experience and certifications are missing, his relevant projects and overall experience make him a highly suitable candidate for the Senior AI Engineer role.",
+      "confidence": 0.9,
+      "weighted_total": 7.95,
+      "profile": {
+        "candidate_id": "candidate_02_rahul_linkedin",
+        "name": "Rahul Mehta",
+        "current_title": "ML Engineer",
+        "location": "Pune, India",
+        "total_years_experience": 5.5,
+        "skills": [
+          "Python",
+          "SQL",
+          "pandas",
+          "LangChain",
+          "RAG",
+          "NLP",
+          "scikit-learn",
+          "Docker",
+          "AWS",
+          "Pinecone",
+          "prompt engineering",
+          "data analysis"
+        ],
+        "domains": [
+          "NLP",
+          "Conversational AI",
+          "Machine Learning",
+          "Data Science",
+          "HR Analytics"
+        ],
+        "education": [
+          "M.Sc. in Data Science, Pune University (2020)"
+        ],
+        "certifications": [],
+        "projects": [
+          "Customer Support Bot: End-to-end chatbot with LangChain, retrieval-augmented generation, and escalation logic. Reduced ticket resolution time by 35%.",
+          "Job Market Trends Dashboard: Interactive Plotly dashboard analysing 50K+ job postings scraped from Naukri.com."
+        ],
+        "achievements": [
+          "Improved chatbot first-response accuracy from 74% to 91%",
+          "Recognised as 'Rising Star' at ChatFlow Technologies annual review 2024"
+        ],
+        "raw_text_excerpt": "name: Rahul Mehta\nheadline: ML Engineer | NLP & Conversational AI\nlocation: Pune, India\nsummary: ML engineer with 4 years of hands-on experience in NLP, conversational AI, and LLM application development. Comfortable with Python, LangChain, and cloud deployments. Looking to transition into applied AI roles that combine engineering depth with domain impact.\nexperience title: Machine Learning Engineer\nexperience company: ChatFlow Technologies\nexperience duration: Mar 2022 \u2013 Present (4 years)\nexperience location: Pune, India\nexperience description: Developed and maintained a customer support chatbot using LangChain and GPT-4o, handling 8K+ conversations/day. Built RAG pipelines with Pinecone for knowledge base retrieval. Implemented intent classification models with scikit-learn achieving 91% accuracy. Deployed services on AWS ECS with Docker.\nexperience title: Data Analyst\nexperience company: InfoEdge India\nexperience duration: Jul 2020 \u2013 Feb 2022 (1.5 years)\nexperience location: Noida, India\nexperience description: Analysed job posting and applicant data using SQL and pandas. Built automated reporting dashboards for recruitment metrics. Exposed to HR analytics workflows and ATS integrations.\nskills: Python\nskills: SQL\nskills: pandas\nskills: LangChain\nskills: RAG\nskills: NLP\nskills: scikit-learn\nskills: Docker\nskills: AWS\nskills: Pinecone\nskills: prompt engineering\nskills: data analysis\neducation degree: M.Sc. in Data Science\neducation institution: Pune University\neducation year: 2020\nprojects: Customer Support Bot: End-to-end chatbot with LangChain, retrieval-augmented generation, and escalation logic. Reduced ticket resolution time by 35%.\nprojects: Job Market Trends Dashboard: Interactive Plotly dashboard analysing 50K+ job postings scraped from Naukri.com.\nachievements: Improved chatbot first-response accuracy from 74% to 91%\nachievements: Recognised as 'Rising Star' at ChatFlow Technologies annual review 2024\nlanguages: English (Professional)\nlanguages: Hindi (Native)\nlanguages: Marathi (Native)",
+        "source_file": "/tmp/tmpegjfbouf/candidate_02_rahul_linkedin.json"
+      }
+    },
+    {
+      "candidate_id": "candidate_05_vikram_linkedin",
+      "name": "Vikram Sethi",
+      "recommendation": "no_hire",
+      "scores": [
+        {
+          "dimension": "Skills Match",
+          "weight": 0.3,
+          "score": 0.0,
+          "justification": "The candidate's skills are predominantly in frontend development (React, TypeScript) with no evidence of the required AI/ML, Python, LLM, or data engineering skills.",
+          "evidence": [
+            "skills: JavaScript, TypeScript, React, Next.js, HTML, CSS, TailwindCSS, Git, REST APIs, Figma, Recharts, React Hook Form",
+            "summary: Limited exposure to backend or ML workflows."
+          ],
+          "weighted_score": 0.0
+        },
+        {
+          "dimension": "Experience Relevance",
+          "weight": 0.25,
+          "score": 0.0,
+          "justification": "The candidate's 3.25 years of frontend development experience does not meet the 5 years required for a Senior AI Engineer role, and the domain is entirely unrelated.",
+          "evidence": [
+            "total_years_experience: 3.25",
+            "current_title: Frontend Developer",
+            "domains: Frontend Development, Web Development, UI/UX, SaaS",
+            "requirements.min_years_experience: 5.0",
+            "requirements.role_title: Senior AI Engineer",
+            "requirements.domain: HR Shortlisting Automation"
+          ],
+          "weighted_score": 0.0
+        },
+        {
+          "dimension": "Education & Certs",
+          "weight": 0.15,
+          "score": 5.0,
+          "justification": "The candidate holds a BCA degree which meets the minimum educational requirement, but their certification is for frontend development rather than AI/ML or cloud.",
+          "evidence": [
+            "education: BCA (Bachelor of Computer Applications), Amity University, Noida (2022)",
+            "certifications: Meta Frontend Developer Professional Certificate (2023)",
+            "requirements.education: Bachelor's degree in Computer Science, Data Science, Engineering, Equivalent practical experience",
+            "requirements.certifications: Cloud certifications, ML certifications"
+          ],
+          "weighted_score": 0.75
+        },
+        {
+          "dimension": "Project / Portfolio",
+          "weight": 0.2,
+          "score": 0.0,
+          "justification": "The candidate's projects are exclusively focused on frontend web development and do not demonstrate any experience with AI, ML, or LLM applications.",
+          "evidence": [
+            "projects: SaaS Analytics Dashboard: Built a multi-tenant dashboard with React, TypeScript, and Recharts for data visualisation. Implemented role-based access control on the frontend.",
+            "projects: Portfolio Website: Personal portfolio built with Next.js and deployed on Vercel."
+          ],
+          "weighted_score": 0.0
+        },
+        {
+          "dimension": "Communication Quality",
+          "weight": 0.1,
+          "score": 9.0,
+          "justification": "The raw text excerpt is well-structured, clear, and uses professional language to effectively communicate the candidate's experience and skills.",
+          "evidence": [
+            "raw_text_excerpt"
+          ],
+          "weighted_score": 0.9
+        }
+      ],
+      "strengths": [
+        "Strong frontend development skills (React, TypeScript, Next.js)",
+        "Experience in building and maintaining SaaS dashboards",
+        "Good communication quality as evidenced by the profile text"
+      ],
+      "gaps": [
+        "Lack of essential AI/ML/LLM skills (e.g., Python, LangChain, RAG, Prompt engineering)",
+        "Insufficient total years of experience for a Senior role (3.25 years vs 5+ required)",
+        "No relevant experience or projects in AI/ML or the HR Shortlisting Automation domain",
+        "Certifications are not relevant to AI/ML or cloud technologies"
+      ],
+      "risk_flags": [
+        "Significant skill mismatch with core AI engineering requirements",
+        "Insufficient seniority and domain expertise for the role",
+        "Candidate explicitly states 'Limited exposure to backend or ML workflows'"
+      ],
+      "overall_justification": "The candidate is a proficient frontend developer with strong communication skills but lacks the fundamental AI/ML engineering skills, relevant experience, and seniority required for a Senior AI Engineer role, as explicitly stated in their profile summary regarding limited exposure to ML workflows.",
+      "confidence": 1.0,
+      "weighted_total": 1.65,
+      "profile": {
+        "candidate_id": "candidate_05_vikram_linkedin",
+        "name": "Vikram Sethi",
+        "current_title": "Frontend Developer",
+        "location": "Gurugram, India",
+        "total_years_experience": 3.25,
+        "skills": [
+          "JavaScript",
+          "TypeScript",
+          "React",
+          "Next.js",
+          "HTML",
+          "CSS",
+          "TailwindCSS",
+          "Git",
+          "REST APIs",
+          "Figma",
+          "Recharts",
+          "React Hook Form"
+        ],
+        "domains": [
+          "Frontend Development",
+          "Web Development",
+          "UI/UX",
+          "SaaS"
+        ],
+        "education": [
+          "BCA (Bachelor of Computer Applications), Amity University, Noida (2022)"
+        ],
+        "certifications": [
+          "Meta Frontend Developer Professional Certificate (2023)"
+        ],
+        "projects": [
+          "SaaS Analytics Dashboard: Built a multi-tenant dashboard with React, TypeScript, and Recharts for data visualisation. Implemented role-based access control on the frontend.",
+          "Portfolio Website: Personal portfolio built with Next.js and deployed on Vercel."
+        ],
+        "achievements": [
+          "Improved Lighthouse performance score from 62 to 94 for production SaaS app"
+        ],
+        "raw_text_excerpt": "name: Vikram Sethi\nheadline: Frontend Developer | React & TypeScript\nlocation: Gurugram, India\nsummary: Frontend developer with 3 years of experience building modern web applications using React, TypeScript, and Next.js. Focused on responsive UI/UX, accessibility, and component library development. Limited exposure to backend or ML workflows.\nexperience title: Frontend Developer\nexperience company: PixelPerfect Studios\nexperience duration: Apr 2023 \u2013 Present (3 years)\nexperience location: Gurugram, India\nexperience description: Built and maintained a SaaS dashboard using React, TypeScript, and TailwindCSS. Implemented responsive layouts, chart components with Recharts, and form validation with React Hook Form. Collaborated with backend team consuming REST APIs. Improved Lighthouse performance score from 62 to 94.\nexperience title: Web Development Intern\nexperience company: StartupHub Incubator\nexperience duration: Jan 2023 \u2013 Mar 2023 (3 months)\nexperience location: Bangalore, India\nexperience description: Built landing pages and marketing sites using HTML, CSS, and JavaScript. Gained exposure to Git workflows and agile methodology.\nskills: JavaScript\nskills: TypeScript\nskills: React\nskills: Next.js\nskills: HTML\nskills: CSS\nskills: TailwindCSS\nskills: Git\nskills: REST APIs\nskills: Figma\neducation degree: BCA (Bachelor of Computer Applications)\neducation institution: Amity University, Noida\neducation year: 2022\ncertifications: Meta Frontend Developer Professional Certificate (2023)\nprojects: SaaS Analytics Dashboard: Built a multi-tenant dashboard with React, TypeScript, and Recharts for data visualisation. Implemented role-based access control on the frontend.\nprojects: Portfolio Website: Personal portfolio built with Next.js and deployed on Vercel.\nachievements: Improved Lighthouse performance score from 62 to 94 for production SaaS app\nlanguages: English (Professional)\nlanguages: Hindi (Native)",
+        "source_file": "/tmp/tmpegjfbouf/candidate_05_vikram_linkedin.json"
+      }
+    }
+  ]
+}

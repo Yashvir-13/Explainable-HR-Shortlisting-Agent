@@ -1,0 +1,46 @@
+{
+  "name": "Isha Raman",
+  "headline": "Senior AI Engineer | LangGraph & HR Analytics",
+  "location": "Bengaluru, India",
+  "summary": "Passionate AI engineer with 9 years of experience building production-grade ML systems and LLM-powered applications for the HR and recruiting domain. I specialise in designing transparent, auditable AI workflows that bridge the gap between cutting-edge NLP research and real-world recruiter needs. Strong believer in explainable AI for high-stakes decisions like hiring.",
+  "experience": [
+    {
+      "title": "Senior AI Engineer",
+      "company": "TalentOps Labs",
+      "duration": "Jun 2020 – Present (6 years)",
+      "location": "Bengaluru, India",
+      "description": "Lead a team of 4 engineers building an AI-powered candidate shortlisting platform. Architected the core LangGraph agent pipeline that parses job descriptions, ingests resumes from multiple formats (PDF, DOCX, LinkedIn JSON), and scores candidates against a configurable rubric. Deployed production Streamlit dashboards and FastAPI microservices. Improved recruiter review throughput by 42% and reduced time-to-shortlist from 3 days to 4 hours."
+    },
+    {
+      "title": "Machine Learning Engineer",
+      "company": "PeopleData AI",
+      "duration": "Jan 2017 – May 2020 (3.5 years)",
+      "location": "Hyderabad, India",
+      "description": "Built RAG workflows using ChromaDB and FAISS for semantic resume search across 200K+ candidate profiles. Implemented SQL analytics pipelines with pandas for HR reporting dashboards. Developed prompt engineering evaluation frameworks and structured JSON output validation for LLM-based classification tasks. Managed data pipelines processing 15K resumes/month."
+    }
+  ],
+  "skills": ["Python", "SQL", "pandas", "NumPy", "LLM", "LangChain", "LangGraph", "RAG", "vector database", "ChromaDB", "FAISS", "Streamlit", "FastAPI", "Docker", "AWS", "prompt engineering", "HR analytics", "data analysis", "scikit-learn", "PyTorch"],
+  "education": [
+    {
+      "degree": "B.Tech in Computer Science and Engineering",
+      "institution": "Indian Institute of Technology, Madras",
+      "year": "2016"
+    }
+  ],
+  "certifications": [
+    "AWS Machine Learning Specialty (2023)",
+    "DeepLearning.AI LangChain for LLM Application Development (2024)"
+  ],
+  "projects": [
+    "Explainable Shortlisting System: Built an end-to-end candidate evaluation agent with rubric scoring, dimension-level justifications, and audit logs. Used LangGraph for orchestration and Pydantic for structured output validation.",
+    "Recruiter Dashboard: Created a Streamlit-based interactive dashboard for side-by-side candidate comparison with drill-down into individual score dimensions and evidence trails.",
+    "Resume Parser Service: Deployed a FastAPI microservice that extracts structured candidate profiles from PDF, DOCX, and LinkedIn JSON formats using pdfplumber, python-docx, and LLM-based extraction."
+  ],
+  "achievements": [
+    "Reduced manual screening time by 42% across a 12-person recruiting team",
+    "Led compliance review for PII-safe AI workflows, achieving SOC 2 readiness",
+    "Published internal white paper on bias mitigation in LLM-based candidate scoring",
+    "Mentored 3 junior engineers on prompt engineering and structured output patterns"
+  ],
+  "languages": ["English (Professional)", "Hindi (Native)", "Tamil (Conversational)"]
+}

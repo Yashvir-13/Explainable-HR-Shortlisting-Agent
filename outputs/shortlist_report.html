@@ -1,0 +1,573 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Shortlist Report — Explainable HR Agent</title>
+  <style>
+    :root {
+      --navy: #1a1f36;
+      --blue: #2563eb;
+      --blue-light: #eff6ff;
+      --green: #0f7b3f;
+      --green-bg: #ecfdf5;
+      --amber: #9a6700;
+      --amber-bg: #fffbeb;
+      --red: #b42318;
+      --red-bg: #fef2f2;
+      --grey-50: #f9fafb;
+      --grey-200: #e5e7eb;
+      --grey-500: #6b7280;
+      --grey-800: #1f2937;
+      --white: #ffffff;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+      color: var(--grey-800); background: var(--grey-50);
+      line-height: 1.55; padding: 0;
+    }
+
+    /* ── Header band ────────────────────────────────── */
+    .report-header {
+      background: var(--navy); color: var(--white);
+      padding: 2rem 3rem 1.6rem;
+    }
+    .report-header h1 { font-size: 1.6rem; font-weight: 700; margin-bottom: 0.3rem; }
+    .report-header p { font-size: 0.85rem; color: #94a3b8; }
+
+    .container { max-width: 1080px; margin: 0 auto; padding: 2rem 3rem 3rem; }
+
+    /* ── Section headings ───────────────────────────── */
+    .section-title {
+      font-size: 0.72rem; font-weight: 700; text-transform: uppercase;
+      letter-spacing: 0.06em; color: var(--blue); margin: 2.2rem 0 0.8rem;
+      border-bottom: 2px solid var(--blue); display: inline-block;
+      padding-bottom: 0.15rem;
+    }
+
+    /* ── Tables ──────────────────────────────────────── */
+    table { border-collapse: collapse; width: 100%; margin: 0.5rem 0 1.5rem; font-size: 0.85rem; }
+    th, td { padding: 0.55rem 0.8rem; text-align: left; vertical-align: top; }
+    thead th { background: var(--navy); color: var(--white); font-weight: 600; font-size: 0.78rem; }
+    tbody tr:nth-child(even) { background: var(--white); }
+    tbody tr:nth-child(odd) { background: var(--grey-50); }
+    tbody td { border-bottom: 1px solid var(--grey-200); }
+
+    /* ── Requirement chips ──────────────────────────── */
+    .req-table th { background: var(--grey-50); color: var(--grey-500); font-weight: 600; width: 170px; font-size: 0.8rem; }
+    .req-table td { background: var(--white); }
+    .req-table tr { border-bottom: 1px solid var(--grey-200); }
+
+    /* ── Recommendation badges ──────────────────────── */
+    .badge { display: inline-block; padding: 0.2rem 0.6rem; border-radius: 4px; font-weight: 700; font-size: 0.78rem; }
+    .badge-hire   { background: var(--green-bg); color: var(--green); }
+    .badge-hold   { background: var(--amber-bg); color: var(--amber); }
+    .badge-no_hire { background: var(--red-bg); color: var(--red); }
+
+    /* ── Candidate detail cards ─────────────────────── */
+    .candidate-card {
+      background: var(--white); border: 1px solid var(--grey-200);
+      border-radius: 8px; padding: 1.5rem 1.8rem; margin-bottom: 1.5rem;
+    }
+    .candidate-card h3 { font-size: 1.1rem; margin-bottom: 0.25rem; }
+    .candidate-meta { font-size: 0.82rem; color: var(--grey-500); margin-bottom: 1rem; }
+
+    /* ── Score bar ───────────────────────────────────── */
+    .score-bar-track { background: var(--grey-200); border-radius: 4px; height: 8px; width: 100%; }
+    .score-bar-fill { border-radius: 4px; height: 8px; }
+    .fill-high { background: var(--green); }
+    .fill-mid { background: var(--amber); }
+    .fill-low { background: var(--red); }
+
+    .evidence { font-size: 0.75rem; color: var(--grey-500); font-style: italic; margin-top: 0.15rem; }
+    .gaps-list { margin: 0.5rem 0; padding-left: 1.2rem; }
+    .gaps-list li { font-size: 0.82rem; color: var(--red); margin-bottom: 0.2rem; }
+    .strengths-list { margin: 0.5rem 0; padding-left: 1.2rem; }
+    .strengths-list li { font-size: 0.82rem; color: var(--green); margin-bottom: 0.2rem; }
+
+    .footer { text-align: center; font-size: 0.72rem; color: var(--grey-500); margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--grey-200); }
+  </style>
+</head>
+<body>
+
+<div class="report-header">
+  <h1>Explainable HR Shortlist Report</h1>
+  <p>AI-generated evaluation  ·  Human review is required before any hiring decision</p>
+</div>
+
+<div class="container">
+
+  <div class="section-title">Job Requirements</div>
+  <table class="req-table">
+    <tr><th>Role</th><td>Senior AI Engineer</td></tr>
+    <tr><th>Domain</th><td>HR Shortlisting Automation</td></tr>
+    <tr><th>Seniority</th><td>Senior</td></tr>
+    <tr><th>Must-have skills</th><td>Python, ML systems, LLM applications, LangChain, LangGraph, Prompt engineering, Structured output validation, SQL, pandas, API design, Data analysis, RAG, Vector database workflows, Semantic search, Streamlit, FastAPI, Explaining technical tradeoffs to non-technical stakeholders</td></tr>
+    <tr><th>Nice-to-have</th><td>HR analytics, Recruiting workflows, Talent acquisition data</td></tr>
+    <tr><th>Min. experience</th><td>5.0 years</td></tr>
+    <tr><th>Education</th><td>Bachelor's degree in Computer Science, Bachelor's degree in Data Science, Bachelor's degree in Engineering, Equivalent practical experience</td></tr>
+    <tr><th>Certifications</th><td>Cloud certifications, ML certifications</td></tr>
+  </table>
+
+  <div class="section-title">Ranked Candidates</div>
+  <table>
+    <thead>
+      <tr>
+        <th>#</th><th>Candidate</th><th>Total</th><th>Recommendation</th>
+        <th>Skills</th><th>Experience</th><th>Education</th><th>Projects</th><th>Communication</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+      <tr>
+        <td>1</td>
+        <td><strong>Isha Raman</strong></td>
+        <td><strong>10.0</strong>/10</td>
+        <td><span class="badge badge-Recommendation.hire">RECOMMENDATION.HIRE</span></td>
+        
+        <td>10.0/10</td>
+        
+        <td>10.0/10</td>
+        
+        <td>10.0/10</td>
+        
+        <td>10.0/10</td>
+        
+        <td>10.0/10</td>
+        
+      </tr>
+      
+      <tr>
+        <td>2</td>
+        <td><strong>Rahul Mehta</strong></td>
+        <td><strong>8.0</strong>/10</td>
+        <td><span class="badge badge-Recommendation.hire">RECOMMENDATION.HIRE</span></td>
+        
+        <td>7.0/10</td>
+        
+        <td>9.0/10</td>
+        
+        <td>6.0/10</td>
+        
+        <td>9.0/10</td>
+        
+        <td>9.0/10</td>
+        
+      </tr>
+      
+      <tr>
+        <td>3</td>
+        <td><strong>Vikram Sethi</strong></td>
+        <td><strong>1.6</strong>/10</td>
+        <td><span class="badge badge-Recommendation.no_hire">RECOMMENDATION.NO HIRE</span></td>
+        
+        <td>0.0/10</td>
+        
+        <td>0.0/10</td>
+        
+        <td>5.0/10</td>
+        
+        <td>0.0/10</td>
+        
+        <td>9.0/10</td>
+        
+      </tr>
+      
+    </tbody>
+  </table>
+
+  
+  <div class="candidate-card">
+    <h3>1. Isha Raman</h3>
+    <div class="candidate-meta">
+      Total: <strong>10.0/10</strong>  ·
+      <span class="badge badge-Recommendation.hire">RECOMMENDATION.HIRE</span>  ·
+      Confidence: 100%
+    </div>
+
+    <table>
+      <thead>
+        <tr><th>Dimension</th><th>Weight</th><th>Score</th><th>Weighted</th><th style="width:45%">Justification</th></tr>
+      </thead>
+      <tbody>
+        
+        <tr>
+          <td>Skills Match</td>
+          <td>30%</td>
+          <td>
+            10.0/10
+            <div class="score-bar-track">
+              <div class="score-bar-fill fill-high"
+                   style="width: 100.0%;"></div>
+            </div>
+          </td>
+          <td>3.00</td>
+          <td>
+            The candidate possesses all required must-have and nice-to-have skills, demonstrating a comprehensive technical and domain-specific fit.
+            
+            <div class="evidence">Evidence: Python, SQL, pandas, LLM, LangChain, LangGraph, RAG, vector database, ChromaDB, FAISS, Streamlit, FastAPI, prompt engineering, HR analytics, data analysis, Pydantic for structured output validation, FastAPI microservices, semantic resume search, designing transparent, auditable AI workflows that bridge the gap between cutting-edge NLP research and real-world recruiter needs</div>
+            
+          </td>
+        </tr>
+        
+        <tr>
+          <td>Experience Relevance</td>
+          <td>25%</td>
+          <td>
+            10.0/10
+            <div class="score-bar-track">
+              <div class="score-bar-fill fill-high"
+                   style="width: 100.0%;"></div>
+            </div>
+          </td>
+          <td>2.50</td>
+          <td>
+            The candidate's 9.5 years of experience, current Senior AI Engineer role, and direct involvement in HR shortlisting automation projects perfectly align with the required seniority and domain.
+            
+            <div class="evidence">Evidence: total_years_experience: 9.5, current_title: Senior AI Engineer, domains: ["HR", "Recruiting", "AI", "Machine Learning", "NLP", "HR Analytics"], Explainable Shortlisting System, Recruiter Dashboard, Resume Parser Service, Architected the core LangGraph agent pipeline that parses job descriptions, ingests resumes from multiple formats... and scores candidates against a configurable rubric., Led compliance review for PII-safe AI workflows, achieving SOC 2 readiness.</div>
+            
+          </td>
+        </tr>
+        
+        <tr>
+          <td>Education & Certs</td>
+          <td>15%</td>
+          <td>
+            10.0/10
+            <div class="score-bar-track">
+              <div class="score-bar-fill fill-high"
+                   style="width: 100.0%;"></div>
+            </div>
+          </td>
+          <td>1.50</td>
+          <td>
+            The candidate holds a relevant B.Tech in Computer Science from a top institution and possesses two highly relevant certifications, including AWS ML Specialty.
+            
+            <div class="evidence">Evidence: B.Tech in Computer Science and Engineering, Indian Institute of Technology, Madras (2016), AWS Machine Learning Specialty (2023), DeepLearning.AI LangChain for LLM Application Development (2024)</div>
+            
+          </td>
+        </tr>
+        
+        <tr>
+          <td>Project / Portfolio</td>
+          <td>20%</td>
+          <td>
+            10.0/10
+            <div class="score-bar-track">
+              <div class="score-bar-fill fill-high"
+                   style="width: 100.0%;"></div>
+            </div>
+          </td>
+          <td>2.00</td>
+          <td>
+            The candidate presents a strong portfolio of three highly relevant projects that directly address the core responsibilities of the role, demonstrating practical application of required skills.
+            
+            <div class="evidence">Evidence: Explainable Shortlisting System, Recruiter Dashboard, Resume Parser Service</div>
+            
+          </td>
+        </tr>
+        
+        <tr>
+          <td>Communication Quality</td>
+          <td>10%</td>
+          <td>
+            10.0/10
+            <div class="score-bar-track">
+              <div class="score-bar-fill fill-high"
+                   style="width: 100.0%;"></div>
+            </div>
+          </td>
+          <td>1.00</td>
+          <td>
+            The candidate's profile text is exceptionally well-structured, clear, and impactful, effectively communicating their expertise and achievements with excellent grammar and conciseness.
+            
+            <div class="evidence">Evidence: headline: Senior AI Engineer | LangGraph & HR Analytics, summary: Passionate AI engineer with 9 years of experience building production-grade ML systems and LLM-powered applications for the HR and recruiting domain. I specialise in designing transparent, auditable AI workflows..., Improved recruiter review throughput by 42% and reduced time-to-shortlist from 3 days to 4 hours.</div>
+            
+          </td>
+        </tr>
+        
+      </tbody>
+    </table>
+
+    
+    <strong style="color: var(--green); font-size: 0.82rem;">Strengths</strong>
+    <ul class="strengths-list">
+      <li>Deep expertise in LLM applications, LangChain, and LangGraph.</li><li>Extensive experience in HR and recruiting domain-specific AI solutions.</li><li>Strong portfolio of highly relevant projects directly addressing job responsibilities.</li><li>Proven ability to build explainable, auditable, and production-grade ML systems.</li><li>Demonstrated commitment to PII safety and bias mitigation in AI.</li><li>Excellent communication skills.</li>
+    </ul>
+    
+    
+
+    <p style="font-size: 0.85rem; margin-top: 0.6rem; padding: 0.6rem; background: var(--blue-light); border-radius: 4px;">
+      Isha Raman is an exceptional candidate who perfectly aligns with all requirements for the Senior AI Engineer role. Her extensive experience, specialized skills in LLM applications and HR analytics, and a strong portfolio of directly relevant projects demonstrate a superior fit. She exceeds seniority requirements, holds relevant education and certifications, and communicates her expertise clearly and effectively.
+    </p>
+  </div>
+  
+  <div class="candidate-card">
+    <h3>2. Rahul Mehta</h3>
+    <div class="candidate-meta">
+      Total: <strong>8.0/10</strong>  ·
+      <span class="badge badge-Recommendation.hire">RECOMMENDATION.HIRE</span>  ·
+      Confidence: 90%
+    </div>
+
+    <table>
+      <thead>
+        <tr><th>Dimension</th><th>Weight</th><th>Score</th><th>Weighted</th><th style="width:45%">Justification</th></tr>
+      </thead>
+      <tbody>
+        
+        <tr>
+          <td>Skills Match</td>
+          <td>30%</td>
+          <td>
+            7.0/10
+            <div class="score-bar-track">
+              <div class="score-bar-fill fill-high"
+                   style="width: 70.0%;"></div>
+            </div>
+          </td>
+          <td>2.10</td>
+          <td>
+            Rahul demonstrates strong proficiency in core ML/LLM skills like Python, LangChain, RAG, prompt engineering, and data analysis, but lacks explicit experience with LangGraph, Streamlit, FastAPI, and structured output validation.
+            
+            <div class="evidence">Evidence: Python, SQL, pandas, LangChain, RAG, NLP, scikit-learn, Docker, AWS, Pinecone, prompt engineering, data analysis, HR Analytics</div>
+            
+          </td>
+        </tr>
+        
+        <tr>
+          <td>Experience Relevance</td>
+          <td>25%</td>
+          <td>
+            9.0/10
+            <div class="score-bar-track">
+              <div class="score-bar-fill fill-high"
+                   style="width: 90.0%;"></div>
+            </div>
+          </td>
+          <td>2.25</td>
+          <td>
+            With 5.5 years of experience as an ML Engineer and direct exposure to HR analytics and job data processing, Rahul's background is highly relevant to the domain and seniority requirements.
+            
+            <div class="evidence">Evidence: total_years_experience: 5.5, current_title: ML Engineer, domains: HR Analytics, experience description: Analysed job posting and applicant data using SQL and pandas. Built automated reporting dashboards for recruitment metrics. Exposed to HR analytics workflows and ATS integrations., experience description: Developed and maintained a customer support chatbot using LangChain and GPT-4o, handling 8K+ conversations/day. Built RAG pipelines with Pinecone for knowledge base retrieval.</div>
+            
+          </td>
+        </tr>
+        
+        <tr>
+          <td>Education & Certs</td>
+          <td>15%</td>
+          <td>
+            6.0/10
+            <div class="score-bar-track">
+              <div class="score-bar-fill fill-mid"
+                   style="width: 60.0%;"></div>
+            </div>
+          </td>
+          <td>0.90</td>
+          <td>
+            Rahul holds an M.Sc. in Data Science, exceeding the minimum education requirement, but does not list any relevant cloud or ML certifications.
+            
+            <div class="evidence">Evidence: M.Sc. in Data Science, Pune University (2020)</div>
+            
+          </td>
+        </tr>
+        
+        <tr>
+          <td>Project / Portfolio</td>
+          <td>20%</td>
+          <td>
+            9.0/10
+            <div class="score-bar-track">
+              <div class="score-bar-fill fill-high"
+                   style="width: 90.0%;"></div>
+            </div>
+          </td>
+          <td>1.80</td>
+          <td>
+            His 'Customer Support Bot' project demonstrates strong LLM application development with measurable impact, and the 'Job Market Trends Dashboard' is directly relevant to the HR domain.
+            
+            <div class="evidence">Evidence: Customer Support Bot: End-to-end chatbot with LangChain, retrieval-augmented generation, and escalation logic. Reduced ticket resolution time by 35%., Job Market Trends Dashboard: Interactive Plotly dashboard analysing 50K+ job postings scraped from Naukri.com.</div>
+            
+          </td>
+        </tr>
+        
+        <tr>
+          <td>Communication Quality</td>
+          <td>10%</td>
+          <td>
+            9.0/10
+            <div class="score-bar-track">
+              <div class="score-bar-fill fill-high"
+                   style="width: 90.0%;"></div>
+            </div>
+          </td>
+          <td>0.90</td>
+          <td>
+            The provided profile text is clear, well-structured, and effectively highlights key skills, experience, and achievements.
+            
+            <div class="evidence">Evidence: raw_text_excerpt</div>
+            
+          </td>
+        </tr>
+        
+      </tbody>
+    </table>
+
+    
+    <strong style="color: var(--green); font-size: 0.82rem;">Strengths</strong>
+    <ul class="strengths-list">
+      <li>Strong experience in LLM application development, RAG, and prompt engineering.</li><li>Direct experience in HR analytics and processing job market data, providing excellent domain fit.</li><li>Demonstrated ability to build end-to-end AI solutions with measurable impact through relevant projects.</li><li>Solid technical skills in Python, LangChain, SQL, pandas, AWS, and Docker.</li><li>Relevant academic background with an M.Sc. in Data Science.</li>
+    </ul>
+    
+    
+    <strong style="color: var(--red); font-size: 0.82rem;">Gaps</strong>
+    <ul class="gaps-list">
+      <li>Lack of explicit experience with specific frameworks like LangGraph, Streamlit, and FastAPI.</li><li>No direct evidence of experience with structured output validation or advanced API design.</li><li>No explicit mention of experience in explaining technical tradeoffs to non-technical stakeholders.</li><li>Absence of cloud or ML certifications.</li>
+    </ul>
+    
+
+    <p style="font-size: 0.85rem; margin-top: 0.6rem; padding: 0.6rem; background: var(--blue-light); border-radius: 4px;">
+      Rahul demonstrates strong technical proficiency in LLM application development, RAG, and prompt engineering, directly aligning with core responsibilities. His experience in HR analytics and processing job market data provides an excellent domain fit. While some specific framework experience and certifications are missing, his relevant projects and overall experience make him a highly suitable candidate for the Senior AI Engineer role.
+    </p>
+  </div>
+  
+  <div class="candidate-card">
+    <h3>3. Vikram Sethi</h3>
+    <div class="candidate-meta">
+      Total: <strong>1.6/10</strong>  ·
+      <span class="badge badge-Recommendation.no_hire">RECOMMENDATION.NO HIRE</span>  ·
+      Confidence: 100%
+    </div>
+
+    <table>
+      <thead>
+        <tr><th>Dimension</th><th>Weight</th><th>Score</th><th>Weighted</th><th style="width:45%">Justification</th></tr>
+      </thead>
+      <tbody>
+        
+        <tr>
+          <td>Skills Match</td>
+          <td>30%</td>
+          <td>
+            0.0/10
+            <div class="score-bar-track">
+              <div class="score-bar-fill fill-low"
+                   style="width: 0.0%;"></div>
+            </div>
+          </td>
+          <td>0.00</td>
+          <td>
+            The candidate's skills are predominantly in frontend development (React, TypeScript) with no evidence of the required AI/ML, Python, LLM, or data engineering skills.
+            
+            <div class="evidence">Evidence: skills: JavaScript, TypeScript, React, Next.js, HTML, CSS, TailwindCSS, Git, REST APIs, Figma, Recharts, React Hook Form, summary: Limited exposure to backend or ML workflows.</div>
+            
+          </td>
+        </tr>
+        
+        <tr>
+          <td>Experience Relevance</td>
+          <td>25%</td>
+          <td>
+            0.0/10
+            <div class="score-bar-track">
+              <div class="score-bar-fill fill-low"
+                   style="width: 0.0%;"></div>
+            </div>
+          </td>
+          <td>0.00</td>
+          <td>
+            The candidate's 3.25 years of frontend development experience does not meet the 5 years required for a Senior AI Engineer role, and the domain is entirely unrelated.
+            
+            <div class="evidence">Evidence: total_years_experience: 3.25, current_title: Frontend Developer, domains: Frontend Development, Web Development, UI/UX, SaaS, requirements.min_years_experience: 5.0, requirements.role_title: Senior AI Engineer, requirements.domain: HR Shortlisting Automation</div>
+            
+          </td>
+        </tr>
+        
+        <tr>
+          <td>Education & Certs</td>
+          <td>15%</td>
+          <td>
+            5.0/10
+            <div class="score-bar-track">
+              <div class="score-bar-fill fill-mid"
+                   style="width: 50.0%;"></div>
+            </div>
+          </td>
+          <td>0.75</td>
+          <td>
+            The candidate holds a BCA degree which meets the minimum educational requirement, but their certification is for frontend development rather than AI/ML or cloud.
+            
+            <div class="evidence">Evidence: education: BCA (Bachelor of Computer Applications), Amity University, Noida (2022), certifications: Meta Frontend Developer Professional Certificate (2023), requirements.education: Bachelor's degree in Computer Science, Data Science, Engineering, Equivalent practical experience, requirements.certifications: Cloud certifications, ML certifications</div>
+            
+          </td>
+        </tr>
+        
+        <tr>
+          <td>Project / Portfolio</td>
+          <td>20%</td>
+          <td>
+            0.0/10
+            <div class="score-bar-track">
+              <div class="score-bar-fill fill-low"
+                   style="width: 0.0%;"></div>
+            </div>
+          </td>
+          <td>0.00</td>
+          <td>
+            The candidate's projects are exclusively focused on frontend web development and do not demonstrate any experience with AI, ML, or LLM applications.
+            
+            <div class="evidence">Evidence: projects: SaaS Analytics Dashboard: Built a multi-tenant dashboard with React, TypeScript, and Recharts for data visualisation. Implemented role-based access control on the frontend., projects: Portfolio Website: Personal portfolio built with Next.js and deployed on Vercel.</div>
+            
+          </td>
+        </tr>
+        
+        <tr>
+          <td>Communication Quality</td>
+          <td>10%</td>
+          <td>
+            9.0/10
+            <div class="score-bar-track">
+              <div class="score-bar-fill fill-high"
+                   style="width: 90.0%;"></div>
+            </div>
+          </td>
+          <td>0.90</td>
+          <td>
+            The raw text excerpt is well-structured, clear, and uses professional language to effectively communicate the candidate's experience and skills.
+            
+            <div class="evidence">Evidence: raw_text_excerpt</div>
+            
+          </td>
+        </tr>
+        
+      </tbody>
+    </table>
+
+    
+    <strong style="color: var(--green); font-size: 0.82rem;">Strengths</strong>
+    <ul class="strengths-list">
+      <li>Strong frontend development skills (React, TypeScript, Next.js)</li><li>Experience in building and maintaining SaaS dashboards</li><li>Good communication quality as evidenced by the profile text</li>
+    </ul>
+    
+    
+    <strong style="color: var(--red); font-size: 0.82rem;">Gaps</strong>
+    <ul class="gaps-list">
+      <li>Lack of essential AI/ML/LLM skills (e.g., Python, LangChain, RAG, Prompt engineering)</li><li>Insufficient total years of experience for a Senior role (3.25 years vs 5+ required)</li><li>No relevant experience or projects in AI/ML or the HR Shortlisting Automation domain</li><li>Certifications are not relevant to AI/ML or cloud technologies</li>
+    </ul>
+    
+
+    <p style="font-size: 0.85rem; margin-top: 0.6rem; padding: 0.6rem; background: var(--blue-light); border-radius: 4px;">
+      The candidate is a proficient frontend developer with strong communication skills but lacks the fundamental AI/ML engineering skills, relevant experience, and seniority required for a Senior AI Engineer role, as explicitly stated in their profile summary regarding limited exposure to ML workflows.
+    </p>
+  </div>
+  
+
+  <div class="footer">
+    Explainable HR Shortlisting Agent  ·  This report is for decision support only
+  </div>
+</div>
+
+</body>
+</html>
