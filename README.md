@@ -393,7 +393,6 @@ The `data/sample/` directory contains test data designed to validate the rubric 
 | 5 LinkedIn JSON profiles | `data/sample/candidate_*.json` |
 | 5 DOCX resumes | `data/sample/resume_*.docx` |
 | Sample HTML/JSON/PDF reports | `outputs/` (after running demo) |
-| Presentation outline | `docs/presentation_deck.md` |
 
 ---
 
